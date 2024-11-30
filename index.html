@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore trendy cardigans, stylish bottoms, and chic accessories at Anamika's Fashion Store. Shop affordable fashion with just a click!">
+    <meta name="keywords" content="shop, cardigans, bottoms, accessories, affordable fashion, trendy clothing">
+    <meta name="author" content="Anamika's Fashion Store">
+    <title>Trendy Cardigans, Bottoms & Accessories - Anamika's Fashion Store</title>
+    <link rel="stylesheet" href="1.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.webp" alt="Anamika's Fashion Store Logo">
+            </a>
+        </div>
+        <h1>Shop with Anamika</h1>
+        <nav role="navigation">
+            <ul>
+                <li><a href="https://www.amazon.in/?&tag=googhydrabk1-21">Home</a></li>
+                <li><a href="https://www.amazon.in/gp/bestsellers/">Products</a></li>
+                <li><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590">Contact</a></li>
+                <li><a href="https://www.amazon.in/gp/cart/view.html">Cart</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products...">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <!-- Sidebar with filters -->
+        <div class="sidebar">
+            <h2>Filter by:</h2>
+            
+            <!-- Price Filter -->
+            <div class="filter">
+                <h3>Price</h3>
+                <input type="range" min="0" max="10000" value="5000" class="slider" id="priceRange">
+                <p>Price: ₹<span id="priceValue">5000</span></p>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="filter">
+                <h3>Category</h3>
+                <select>
+                    <option value="all">All</option>
+                    <option value="cardigans">Cardigans</option>
+                    <option value="bottoms">Bottoms</option>
+                    <option value="accessories">Accessories</option>
+                </select>
+            </div><div class="filter">
+                <h3>Delivery Day</h3>
+                <input type="checkbox" id="deliveryToday"><label for="deliveryToday">Get It Today</label><br>
+                <input type="checkbox" id="deliveryTomorrow"><label for="deliveryTomorrow">Get It by Tomorrow</label><br>
+            </div>
+
+            <!-- Brand Filter -->
+            <div class="filter">
+                <h3>Brands</h3>
+                <input type="checkbox" id="apple"><label for="apple">Apple</label><br>
+                <input type="checkbox" id="samsung"><label for="samsung">Samsung</label><br>
+                <input type="checkbox" id="oneplus"><label for="oneplus">OnePlus</label><br>
+                <input type="checkbox" id="boat"><label for="boat">boAt</label><br>
+                <input type="checkbox" id="redmi"><label for="redmi">Redmi</label><br>
+                <input type="checkbox" id="realme"><label for="realme">realme</label><br>
+                <input type="checkbox" id="iqoo"><label for="iqoo">iQOO</label><br>
+                <input type="checkbox" id="nokia"><label for="nokia">Nokia</label><br>
+                <input type="checkbox" id="vivo"><label for="vivo">Vivo</label><br>
+            </div>
+
+            <!-- Customer Reviews Filter -->
+            <div class="filter">
+                <h3>Customer Reviews</h3>
+                <input type="checkbox" id="reviews4Stars"><label for="reviews4Stars">4 Stars & Up</label><br>
+            </div>
+
+            <!-- Item Condition Filter -->
+            <div class="filter">
+                <h3>Item Condition</h3>
+                <input type="checkbox" id="newItem"><label for="newItem">New</label><br>
+                <input type="checkbox" id="renewedItem"><label for="renewedItem">Renewed</label><br>
+            </div>
+
+            <!-- Price Filter -->
+            <div class="filter">
+                <h3>Price</h3>
+                <input type="radio" name="price" id="under1000"><label for="under1000">Under ₹1,000</label><br>
+                <input type="radio" name="price" id="1000to5000"><label for="1000to5000">₹1,000 - ₹5,000</label><br>
+                <input type="radio" name="price" id="5000to10000"><label for="5000to10000">₹5,000 - ₹10,000</label><br>
+                <input type="radio" name="price" id="10000to20000"><label for="10000to20000">₹10,000 - ₹20,000</label><br>
+                <input type="radio" name="price" id="over20000"><label for="over20000">Over ₹20,000</label><br>
+            </div>
+
+            <!-- Deals & Discounts Filter -->
+            <div class="filter">
+                <h3>Deals & Discounts</h3>
+                <input type="checkbox" id="blackFridayDeals"><label for="blackFridayDeals">Black Friday deals</label><br>
+                <input type="checkbox" id="madeForAmazon"><label for="madeForAmazon">Made for Amazon</label><br>
+            </div>
+
+            <!-- Rating Filter -->
+            <div class="filter">
+                <h3>Rating</h3>
+                <input type="checkbox" id="rating1"><label for="rating1">1 Star</label><br>
+                <input type="checkbox" id="rating2"><label for="rating2">2 Stars</label><br>
+                <input type="checkbox" id="rating3"><label for="rating3">3 Stars</label><br>
+                <input type="checkbox" id="rating4"><label for="rating4">4 Stars</label><br>
+                <input type="checkbox" id="rating5"><label for="rating5">5 Stars</label><br>
+            </div>
+        </div>
+
+        <!-- Products Section -->
+        <section class="products">
+            <div class="product-card">
+                <a href="https://officialwebsite.com/strawberry-cardigan" target="_blank">
+                    <img src="71vO6Jn3-oL._AC_UY1100_.jpg" alt="Strawberry Cardigan - Red Knitwear" loading="lazy">
+                </a>
+                <h2>Strawberry Cardigan</h2>
+                <p>₹6,860</p>
+                <button onclick="window.location.href='https://amzn.in/d/2HK0pwc'">Add to Cart</button>
+            
+            </div>
+
+            <!-- More Product Cards as in previous code -->
+
+<!-- Product 2 -->
+        <div class="product-card">
+            <a href="https://officialwebsite.com/floral-cardigan" target="_blank">
+                <img src="purple _.jpg" alt="Floral Cardigan - Purple Knitwear" loading="lazy">
+            </a>
+            <h2>Floral Cardigan</h2>
+            <p>₹1500</p>
+            <button onclick="window.location.href='https://amzn.in/d/gyz8OV1'">Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <a href="https://officialwebsite.com/cargo-bottoms" target="_blank">
+                <img src="0a27e1aa7cf012272801f66bfb867937.jpg" alt="Cargo Bottoms - Black" loading="lazy">
+            </a>
+            <h2>Cargo Bottoms</h2>
+            <p>₹1700</p>
+            <button onclick="window.location.href='https://amzn.in/d/0lxfRGA'">Add to Cart</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <a href="https://officialwebsite.com/baige-bottoms" target="_blank">
+                <img src="blokette_style_cargo_stripe_pants_boogzel_clothing_9.webp" alt="Beige Cargo Pants" loading="lazy">
+            </a>
+            <h2>Beige Bottoms</h2>
+            <p>₹1650</p>
+            <button onclick="window.location.href='https://amzn.in/d/3hunveR'">Add to Cart</button>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <a href="https://amzn.in/d/7mG4drf" target="_blank">
+                <img src="w1.webp" alt="Kawaii Water Bottle" loading="lazy">
+            </a>
+            <h2>Kawaii Waterbottle</h2>
+            <p>₹249</p>
+            <button onclick="window.location.href='https://amzn.in/d/7mG4drf'">Add to Cart</button>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+            <a href="https://amzn.in/d/4VP7Vzr" target="_blank">
+                <img src="l2_.jpg" alt="Aesthetic Lamp" loading="lazy">
+            </a>
+            <h2>Aesthetic Lamp</h2>
+            <p>₹599</p>
+            <button onclick="window.location.href='https://amzn.in/d/4VP7Vzr'">Add to Cart</button>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+            <a href="https://amzn.in/d/hLfrYNf" target="_blank">
+                <img src="ice_.webp" alt="Ice Roller - Skincare Tool" loading="lazy">
+            </a>
+            <h2>Ice Roller</h2>
+            <p>₹140</p>
+            <button onclick="window.location.href='https://amzn.in/d/hLfrYNf'">Add to Cart</button>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+            <a href="https://amzn.in/d/3sY9aWe" target="_blank">
+                <img src="j.webp" alt="Jewelry Box - Chic Storage" loading="lazy">
+            </a>
+            <h2>Jewelry Box</h2>
+            <p>₹467</p>
+            <button onclick="window.location.href='https://amzn.in/d/3sY9aWe'">Add to Cart</button>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card">
+            <a href="https://amzn.in/d/3RvWLqD" target="_blank">
+                <img src="h1_.jpg" alt="Women's Hoodie - Comfortable Wear" loading="lazy">
+            </a>
+            <h2>Women Hoodies</h2>
+            <p>₹467</p>
+            <button onclick="window.location.href='https://amzn.in/d/3RvWLqD'">Add to Cart</button>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-card">
+            <a href="https://amzn.in/d/3y5jnuW" target="_blank">
+                <img src="sari.jpg" alt="Saree - Traditional Indian Wear" loading="lazy">
+            </a>
+            <h2>Saree</h2>
+            <p>₹2400</p>
+            <button onclick="window.location.href='https://amzn.in/d/3y5jnuW'">Add to Cart</button>
+        </div>
+
+        <!-- Product 11 -->
+        <div class="product-card">
+            <a href="https://amzn.in/d/2KXUEw4" target="_blank">
+                <img src="shoes.jpg" alt="Shoes - Comfortable Sneakers" loading="lazy">
+            </a>
+            <h2>Shoes 191</h2>
+            <p>₹990</p>
+            <button onclick="window.location.href='https://amzn.in/d/2KXUEw4'">Add to Cart</button>
+        </div>
+
+        <!-- Product 12 -->
+        <div class="product-card">
+            <a href="https://amzn.in/d/99Xo0Xv" target="_blank">
+                <img src="ear_.jpg" alt="Earrings - Fashion Jewelry" loading="lazy">
+            </a>
+            <h2>Earrings</h2>
+            <p>₹90</p>
+            <button onclick="window.location.href='https://amzn.in/d/99Xo0Xv'">Add to Cart</button>
+        </div>
+    </section>
+
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Anamika's Fashion Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Display the selected price value
+        var slider = document.getElementById("priceRange");
+        var priceValue = document.getElementById("priceValue");
+        slider.oninput = function() {
+            priceValue.innerHTML = slider.value;
+        }
+    </script>
+</body>
+</html>
